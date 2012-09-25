@@ -15,7 +15,16 @@
       function quantoEh(expressao){
         return eval(expressao.replace("Quanto é", "").replace("?", ""));
       }
-      console.log(quantoEh("Quanto é 2 + 2?"));
+      console.log(quantoEh("Quanto é 2 + 2 + 6?"));
+      
+      function quantoEhNew(expressao){
+        var resultado = 0, busca = null, rx = /\d+/g;
+        while(busca = rx.exec(frase)){
+          resultado += parseInt(busca[0], 10)
+        }
+        return resultado;
+      }
+      console.log(quantoEhNew("Quanto é 2 + 2 + 6?"));
     </script>
   </body>
 </html>	
