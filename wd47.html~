@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <title>WD-47</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>WD-47 Caelum</h1>
+    <ul>
+      <li>Javascript Básico</li>
+      <li>DOM</li>
+      <li>JQuery</li>
+    </ul>
+    <script>
+      var local = "Caelum Ensino e Inovação";
+      console.log(typeof(local));
+      console.log(local.length);
+      console.dir(local);
+      var sala = new String(144);
+      console.log(typeof(sala));
+      console.log(sala.valueOf());
+      console.dir(sala);
+      console.log(local.replace(/ino/ig, "BANG!"));
+      
+      var onze = "011";
+      console.log(parseInt(onze, 10) + 3);
+      console.log(0xe12);
+    </script>
+  </body>
+</html>	
