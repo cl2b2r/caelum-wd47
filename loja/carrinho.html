@@ -56,7 +56,6 @@
     <div id="principal" class="conteudo">
 
 			<div>
-				<a id="linkaviso" href="#">Esconder aviso</a>
 				<ul>
  					<li>Todas as bolsas nacionais com 30% de desconto</li>
 					<li>Casacos importados com 15% de desconto</li>
@@ -170,7 +169,21 @@
 
       </div><!-- fim do conteudo -->
     </div><!-- fim do rodape -->
+    <script type="text/javascript" src="script/modernizr.custom.js"></script>
+    <script type="text/javascript">
+      Modernizr.load({
+        test: Modernizr.localStorage,
+        nope: ['script/localstorage-polyfill.js']
+      });
+    </script>
     <script type="text/javascript" src="script/input-numerico.js"></script>
     <script type="text/javascript" src="script/carrinho.js"></script>
+    <script type="text/javascript" src="script/aviso.js"></script>
+    <script type="text/javascript" src="script/local.js"></script>
+    <script type="text/javascript" src="script/carrinho-oo.js"></script>
+    <script type="text/javascript">
+      var carrinho = new Carrinho(document.getElementById("carrinho"));
+      console.log(carrinho.itens);  
+    </script>
   </body>
 </html>
